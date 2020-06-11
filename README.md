@@ -33,7 +33,7 @@ Load balancing ensures that the application will be highly **available**, in add
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to:
 - **log files**
-- **system **metrics**.
+- system **metrics**
 
 
 The configuration details of each machine may be found below.
