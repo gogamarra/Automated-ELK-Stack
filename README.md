@@ -1,7 +1,5 @@
-# Cybersecurity ELK Stack Setup Project
-A project to setup an ELK server to monitor a website using Microsoft Azure cloud environment.
-
-[filebeat playbook](./ansible/filebeat-playbook.yml)
+# Cybersecurity ELK Stack Deployment Project
+This is a project to setup an ELK stack to monitor a website using Microsoft Azure cloud environment.
 
 ## Automated ELK Stack Deployment
 
