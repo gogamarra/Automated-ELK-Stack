@@ -93,7 +93,7 @@ We have installed the following Beats on these machines:
 - **filebeats**
 
 These Beats allow us to collect the following information from each machine:
-- **Filebeat collects file system logs from DVWM-1
+- **Filebeat collects file system logs from DVWM-1**
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
