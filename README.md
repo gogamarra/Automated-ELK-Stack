@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **PLAYBOOK** file may be used to install only certain pieces of it, such as Filebeat.
 
-  - ![Playbook File](./ansible/filebeat-playbook.yml)
+- ![Playbook File](./ansible/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -42,7 +42,6 @@ The configuration details of each machine may be found below.
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | DVWA-VM1 | Webserver| 10.0.0.5   | Linux            |
-| DVWA-VM2 | Webserver| 10.0.0.6   | Linux            |
 | ESVM1    | Webserver| 10.0.0.7   | Linux            |
 
 ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management of Jump Box.
@@ -53,19 +52,22 @@ ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management o
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the **Jump Box** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the **Jump Box** and **ELKServer** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- **107.3.134.166** (Relative to each implementation adminstrator for JumpBox and ElkServer.  Add and restrict as needed.)
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by **Jump Box**.
+- **The Jump Box IP Address is 10.0.0.4**
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| Jump Box | Yes                 | 107.3.134.166        |
 |          |                     |                      |
-|          |                     |                      |
+| ElkServer| Yes                 | 107.3.134.166        |
+|          |                     |  10.0.0.4            |
+
+(Restriction set in Azure Network Security Group)
 
 ### Elk Configuration
 
@@ -81,14 +83,14 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+- ![Playbook File](./ansible/diagrams/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- **DVWA-VM1 (10.0.0.5)
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
