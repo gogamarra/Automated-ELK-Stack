@@ -45,7 +45,8 @@ The configuration details of each machine may be found below.
 | DVWA-VM2 | Webserver| 10.0.0.6   | Linux            |
 | ESVM1    | Webserver| 10.0.0.7   | Linux            |
 
-(The IP Address may vary based on each individual deployment but should remain relatively static unless there is administrative reassignment)
+ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management of Jump Box.
+(The Private IP Addresses may vary relative to a deployment effort.)
 
 
 ### Access Policies
