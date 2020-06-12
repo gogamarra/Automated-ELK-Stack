@@ -32,8 +32,8 @@ Load balancing ensures that the application will be highly **available**, in add
 - **A Jump Box has significant effiency and consistancy advantages in a cloud environment.  If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case via the jump box.**
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to:
-- **log files**
-- system **metrics**
+- **The file system, which traditionally in the past has been captured by log files**
+- **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on**
 
 
 The configuration details of each machine may be found below.
@@ -44,6 +44,9 @@ The configuration details of each machine may be found below.
 | DVWA-VM1 | Webserver| 10.0.0.5   | Linux            |
 | DVWA-VM2 | Webserver| 10.0.0.6   | Linux            |
 | ESVM1    | Webserver| 10.0.0.7   | Linux            |
+
+(The IP Address may vary based on each individual deployment but should remain relatively static unless there is administrative reassignment)
+
 
 ### Access Policies
 
