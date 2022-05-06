@@ -10,7 +10,7 @@ The following skills and knowledge are demonstrated:
 
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+An administrator creates YAML and .cfg files  within the Provisioner Container of the JumpBox VM to configure the ELK stack and DVWA servers in the network depicted in the following diagram.
 
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
