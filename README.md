@@ -6,7 +6,7 @@ The skills and knowledge demonstrated:
 - Deploying containers using ANSIBLE and DOCKER technology
 - Deploying an ELK stack on a virtual server
 - Deploying Filebeat and Metricbeat with Ansible on target web servers to monitor activity
-- Secure architecture
+- Secure architecture with hardening
 
 ### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
