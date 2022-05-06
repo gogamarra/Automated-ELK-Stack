@@ -14,7 +14,7 @@ The skills and knowledge demonstrated:
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
 ### Deployment Files Utilization
-Implementation is managed from the Docker "Provisioner" container located within the "Jump-Box" VM, previously setup for SSH remote login with secure key.  Instructions within YAML files, otherwise known as "playbooks" and configuration and host files needed to properly target VMs were used to configure the network depicted in the above diagram.  These files have been tested and successfully generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, selected playbook files but not others may be used to certain features only, such as Filebeat, but not Metricbeat.
+Instructions within YAML files, otherwise known as "playbooks" and configuration and host files needed to properly target VMs were used to configure the network depicted in the above diagram.  Implementation is managed from the Docker "Provisioner" container located within the "Jump-Box" VM, previously setup for SSH remote login with secure key.  These files have been tested and successfully generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, selected playbook files but not others may be used to certain features only, such as Filebeat, but not Metricbeat.
 
 - ![Playbook File](./ansible/filebeat-playbook.yml)
 
