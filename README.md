@@ -1,5 +1,5 @@
 # Cybersecurity Project: ELK Monitoring Stack Deployment
-In this portfolio project, I implement a cloud monitoring system by configuring an ELK stack server within an MS Azure Virtual Network.
+In this portfolio project, I implement a cloud monitoring system over a hosted web application by configuring an ELK stack server within an MS Azure Virtual Network.
 The network was created previously in another portfolio project.
 
 The skills and knowledge demonstrated:
@@ -47,12 +47,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each virtual machine listed as follows:
 
-|         Name         | Function  | IP Address | Operating System |
-|----------------------|-----------|------------|------------------|
-| Jump-Box-Provisioner | Gateway   | 10.0.0.4   | Linux            |
-| DVWA-VM1             | Webserver | 10.0.0.5   | Linux            |
-| DVWA-VM2             | Webserver | 10.0.0.6   | Linux            |
-| ELK-Stack            | ELKserver | 10.0.0.7   | Linux            |
+|         Name         | Function  | Private IP |    Public IP   | Operating System | Load Balanced |
+|----------------------|-----------|------------|----------------|------------------|---------------|
+| Jump-Box-Provisioner | Gateway   |  10.0.0.4  | 52.247.211.204 |      Linux       |      No       |
+| DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 |      Linux       |      Yes      |
+| DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 |      Linux       |      Yes      |
+| ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   |      Linux       |      No       |
 
 ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management of Jump Box.
 (The Private IP Addresses may vary relative to a deployment effort.)
