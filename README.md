@@ -6,7 +6,6 @@ The skills and knowledge demonstrated:
 - Deploying containers using ANSIBLE and DOCKER technology
 - Deploying an ELK stack on a virtual server
 - Deploying Filebeat and Metricbeat with Ansible on target web servers to monitor activity
-- Network Diagramming
 
 ## Automated ELK Stack Deployment
 
