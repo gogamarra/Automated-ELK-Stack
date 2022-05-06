@@ -10,7 +10,7 @@ The skills and knowledge demonstrated:
 ## Automated ELK Stack Deployment
 
 
-### Network Diagram (Post Deployment)
+### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
 ### Deployment Files Utilization
