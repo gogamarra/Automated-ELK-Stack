@@ -10,11 +10,12 @@ The skills and knowledge demonstrated:
 
 ## Automated ELK Stack Deployment
 
-The YAML and configuration files generated for this project were used to configure the network depicted below.
 
+### Network Diagram (Post Deployment)
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **PLAYBOOK** file may be used to install only certain pieces of it, such as Filebeat.
+### Deployment Files
+The YAML and configuration files generated for this project were used to configure the network depicted in the above diagram.  These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **PLAYBOOK** file may be used to install only certain pieces of it, such as Filebeat.
 
 - ![Playbook File](./ansible/filebeat-playbook.yml)
 
@@ -45,12 +46,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each virtual machine listed as follows:
 
-|    Name   |  Function | IP Address | Operating System |
-|-----------|-----------|------------|------------------|
-| Jump Box  | Gateway   | 10.0.0.4   | Linux            |
-| DVWA-VM1  | Webserver | 10.0.0.5   | Linux            |
-| DVWA-VM2  | Webserver | 10.0.0.6   | Linux            |
-| ELK-Stack | Webserver | 10.0.0.7   | Linux            |
+|         Name         | Function  | IP Address | Operating System |
+|----------------------|-----------|------------|------------------|
+| Jump-Box-Provisioner | Gateway   | 10.0.0.4   | Linux            |
+| DVWA-VM1             | Webserver | 10.0.0.5   | Linux            |
+| DVWA-VM2             | Webserver | 10.0.0.6   | Linux            |
+| ELK-Stack            | ELKserver | 10.0.0.7   | Linux            |
 
 ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management of Jump Box.
 (The Private IP Addresses may vary relative to a deployment effort.)
