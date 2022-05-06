@@ -36,13 +36,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on**
 
 
-The configuration details of each machine may be found below.
+The configuration details of each virtual machine listed as follows:
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| DVWA-VM1 | Webserver| 10.0.0.5   | Linux            |
-| ESVM1    | Webserver| 10.0.0.7   | Linux            |
+|    Name   |  Function | IP Address | Operating System |
+|-----------|-----------|------------|------------------|
+| Jump Box  | Gateway   | 10.0.0.4   | Linux            |
+| DVWA-VM1  | Webserver | 10.0.0.5   | Linux            |
+| DVWA-VM2  | Webserver | 10.0.0.6   | Linux            |
+| ELK-Stack | Webserver | 10.0.0.7   | Linux            |
 
 ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management of Jump Box.
 (The Private IP Addresses may vary relative to a deployment effort.)
