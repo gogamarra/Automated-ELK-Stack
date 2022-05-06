@@ -8,7 +8,7 @@ The skills and knowledge demonstrated:
 - Deploying Filebeat and Metricbeat with Ansible on target web servers to monitor activity
 - Implementing secure architecture with hardening
 
-### Network Diagram (Post-Deployment)
+### Network Diagram (Post-ELK Stack Deployment)
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
 ### Deployment Files Utilization
