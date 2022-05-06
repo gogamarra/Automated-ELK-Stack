@@ -2,7 +2,7 @@
 In this portfolio project, I implement a cloud monitoring system by configuring an ELK stack server within an MS Azure Virtual Network.
 The network was created previously in another portfolio project.
 
-The following skills and knowledge are demonstrated:
+The skills and knowledge demonstrated:
 - Deploying containers using ANSIBLE and DOCKER technology
 - Deploying an ELK stack on a virtual server
 - Deploying Filebeat and Metricbeat with Ansible on target web servers to monitor activity
