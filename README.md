@@ -1,6 +1,6 @@
 # Cybersecurity Project: ELK Monitoring Stack Deployment
-This project deploys a cloud monitoring system by configuring an ELK stack server within an MS Azure Virtual Network created in a seperate porfolio project.  
-The network hosts a web site with mulitple virtual servers, a load balancer and a firewall.
+In this portfolio project, I implement a cloud monitoring system by configuring an ELK stack server within an MS Azure Virtual Network.
+The network was created previously in another portfolio project.
 
 The following skills and knowledge are demonstrated:
 - Deploying containers using ANSIBLE and DOCKER technology
@@ -10,7 +10,7 @@ The following skills and knowledge are demonstrated:
 
 ## Automated ELK Stack Deployment
 
-An administrator creates YAML and .cfg files  within the Provisioner Container of the JumpBox VM to configure the ELK stack and DVWA servers in the network depicted in the following diagram.
+The YAML and configuration files generated for this project were used to configure the network depicted below.
 
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
