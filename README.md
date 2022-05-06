@@ -1,5 +1,5 @@
 # Cybersecurity Project: ELK Monitoring Stack Deployment
-This is a project to setup an ELK stack to monitor virtual network supporting a web application in a Microsoft Azure cloud environment.
+This is a project to setup ELK stack monitoring of a web application servers residing within a virtual network in a Microsoft Azure cloud environment.
 
 ## Automated ELK Stack Deployment
 
