@@ -1,6 +1,5 @@
 # Automated ELK Stack Deployment
-In this portfolio project, I implement a cloud monitoring system over a hosted web application by configuring an ELK stack server within an MS Azure Virtual Network.
-The network was created previously in another portfolio project.
+In this portfolio project, I implement a cloud monitoring system by configuring an ELK stack server and target servers within an a Virtual Network. The network was created previously in another portfolio project.
 
 The skills and knowledge demonstrated:
 - Deploying containers using ANSIBLE and DOCKER technology
