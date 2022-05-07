@@ -8,7 +8,7 @@ The skills and knowledge demonstrated:
 - Implementing secure architecture with hardening
 
 ### Network Diagram (Post-ELK Stack Deployment)
-![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
+![Deployment Architecture](./diagrams/Elk_Stack_Diagram-2.jpg)
 
 ### Instruction and Configuration files Used for Deployment
 Instructions within YAML files, otherwise known as "playbooks" as well as configuration and host files  (needed to properly target VMs) were used to configure the network depicted in the above diagram.  As a result, a new ELK server was created and beats installed on the DVWA1 and DVWA2.
