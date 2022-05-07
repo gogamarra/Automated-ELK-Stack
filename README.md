@@ -10,7 +10,7 @@ The skills and knowledge demonstrated:
 ### Network Diagram (Post-ELK Stack Deployment)
 ![Deployment Architecture](./diagrams/ElkArchitecture.jpg)
 
-### Deployment Files Utilization
+### Instruction and Configuration files Used for Deployment
 Instructions within YAML files, otherwise known as "playbooks" as well as configuration and host files  (needed to properly target VMs) were used to configure the network depicted in the above diagram.  As a result, a new ELK server was created and beats installed on the DVWA1 and DVWA2.
 
 Automated mplementation is managed by an administrator from the Docker "Provisioner" container located within the "Jump-Box-Provisioner" VM, previously setup for SSH remote login with secure key.  These files have been tested and successfully generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, selected playbook files but not others may be used to certain features only, such as Filebeat, but not Metricbeat.
