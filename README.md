@@ -4,7 +4,7 @@ In this portfolio project, I implemented a cloud monitoring system in a virtual 
 The skills and knowledge demonstrated:
 - Provision and configure a virtual network with ANSIBLE automation engine and DOCKER container environments.
 - Deploy a new ELK stack virtual server.
-- Deploy FILEBEAT and METRICBEAT lightweight shippers on web servers to collect log, OS, and services data and send to the ELK stack.
+- Deploy FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data to send to the ELK stack server.
 
 ### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/Elk_Stack_Diagram-2.jpg)
