@@ -10,7 +10,7 @@ The skills and knowledge demonstrated:
 ![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
 ### Instruction and Configuration files Used for Deployment
-ANSIBLE instruction YAML files, known as **PLAYBOOKS**, are used to generate a live ELK deployement.  They can be used to  either recreate they entire deployment pictured above. (See Network Diagram).  Alternatively, select portions of a PLAYBOOK file may be used to install only certain pieces of it, such as FILEBEAT.
+ANSIBLE instruction YAML files, known as **PLAYBOOKS**, are used to generate a live ELK deployement.  They can be used to recreate the entire deployment pictured above. (See Network Diagram).  Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of it, such as FILEBEAT.
 
 - ![Playbook File](./ansible/filebeat-playbook.yml)
 
