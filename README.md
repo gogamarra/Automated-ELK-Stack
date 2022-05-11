@@ -2,15 +2,15 @@
 In this portfolio project, I implemented a cloud monitoring system in a virtual network by configuring an ELK stack server to receive data from web servers. (The network was created previously in another portfolio project.)
 
 The skills and knowledge demonstrated:
-- Provision and configure a virtual network with ANSIBLE automation engine and DOCKER container environments.
-- Deploy a new ELK stack virtual server.
+- Using ANSIBLE provisioning software and DOCKER container environments.
+- Deploying a new ELK stack virtual server using auto-generation techniques.
 - Deploy FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data to send to the ELK stack server.
 
 ### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
 ### Instruction and Configuration files Used for Deployment
-ANSIBLE instruction YAML files, known as **PLAYBOOKS**, are used to generate a live ELK deployement.  They can be used to recreate the entire deployment pictured above. (See Network Diagram).  Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of it, such as FILEBEAT.
+The following YAML code files are the ANSIBLE **PLAYBOOKS** that have beeen tested and used to generate a live ELK deployment on an AZURE virtual network.  They can be used to recreate the entire deployment pictured above. (See Network Diagram).  Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
 
 - ![Playbook File](./ansible/filebeat-playbook.yml)
 
