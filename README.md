@@ -5,7 +5,6 @@ The skills and knowledge demonstrated:
 - Provision and configure a virtual network with ANSIBLE automation engine and DOCKER container environments.
 - Deploy ELK stack on a virtual server.
 - Deploy FILEBEAT and METRICBEAT on targeted web servers to monitor activity.
-- Implement secure architecture with hardening. 
 
 ### Network Diagram (Post-ELK Stack Deployment)
 ![Deployment Architecture](./diagrams/Elk_Stack_Diagram-2.jpg)
