@@ -7,7 +7,7 @@ The skills and knowledge demonstrated:
 - Deploy FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data to send to the ELK stack server.
 
 ### Network Diagram (Post-Deployment)
-![Deployment Architecture](./diagrams/Elk_Stack_Diagram-2.jpg)
+![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
 ### Instruction and Configuration files Used for Deployment
 ANSIBLE implements instructions listed within ASCII-based YAML files, otherwise known as "playbooks".  During configuration as well as configuration and host files  (needed to properly target VMs) were used to configure the network depicted in the above diagram.  As a result, a new ELK server was created and beats installed on the DVWA1 and DVWA2.
