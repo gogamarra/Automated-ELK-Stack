@@ -6,7 +6,7 @@ The skills and knowledge demonstrated:
 - Deploy ELK stack on a virtual server.
 - Deploy FILEBEAT and METRICBEAT on targeted web servers to monitor activity.
 
-### Network Diagram (Post-ELK Stack Deployment)
+### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/Elk_Stack_Diagram-2.jpg)
 
 ### Instruction and Configuration files Used for Deployment
