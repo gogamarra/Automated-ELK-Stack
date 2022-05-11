@@ -31,17 +31,15 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly **available**, in addition to restricting **traffic** to the network.
 
-
 - **Load Balancers protect the availability aspected of networked environments. On a normal basis, the load balancer can handle initial communication with incoming client request thus releasing the application from these tasks thus allowing applications to respond quicker.  In an extreme security situation, load balancers can help to diminish effects of DDoS (Distributed Denial Of Service) attack by redirecting malicious traffic to alternative sources so as not to overwhelm and deny access to the main application servers.** 
 
-- **A Jump Box has significant effiency and consistancy advantages in a cloud environment.  If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case via the jump box.**
+- **A Jump Box has significant efficiency and consistancy advantages in a cloud environment.  If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case via the jump box.**
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to:
 - **The file system, which traditionally in the past has been captured by log files**
-- **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on**
+- **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on)**
 
-
-The configuration details of each virtual machine listed as follows:
+The Virtual Machines and configuration detailes of each are as follows:
 
 |         Name         | Function  | Private IP |    Public IP   | Operating System | Load Balanced |
 |----------------------|-----------|------------|----------------|------------------|---------------|
@@ -71,7 +69,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes                 | 107.3.134.166        |
 |          |                     |                      |
 | ElkServer| Yes                 | 107.3.134.166        |
-|          |                     |  10.0.0.4            |
+|          |                     | 10.0.0.4             |
 
 (Restriction set in Azure Network Security Group)
 
