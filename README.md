@@ -1,5 +1,5 @@
 # Automated ELK Stack Deployment
-In this portfolio project, I implemented a cloud monitoring system in a virtual network by configuring an ELK stack server to receive data from protected webservers. The targeted network was created previously in another portfolio project.
+In this portfolio project, I implemented a cloud monitoring system in a virtual network by configuring an ELK stack server to receive data from webservers. (The network was created previously in another portfolio project.)
 
 The skills and knowledge demonstrated:
 - Provision and configure a virtual network with ANSIBLE automation engine and DOCKER container environments.
