@@ -39,28 +39,28 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **The file system, which traditionally in the past has been captured by log files**
 - **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on)**
 
-The Virtual Machines and configuration detailes of each are as follows:
+The Virtual Machines details of each are as follows:
 
 |         Name         | Function  | Private IP |    Public IP   | Operating System | Load Balanced |
 |----------------------|-----------|------------|----------------|------------------|---------------|
-| Jump-Box-Provisioner | Gateway   |  10.0.0.4  | 52.247.211.204 |      Linux       |      No       |
-| DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 |      Linux       |      Yes      |
-| DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 |      Linux       |      Yes      |
-| ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   |      Linux       |      No       |
+| Jump-Box-Provisioner | Gateway   |  10.0.0.4  | 52.247.211.204 |  Ubuntu 18.04    |      No       |
+| DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 |  Ubuntu 18.04    |      Yes      |
+| DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 |  Ubuntu 18.04    |      Yes      |
+| ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   |  Ubuntu 18.04    |      No       |
 
-ESVM1 = Elk Stack Virtual Machine created through Ansible Container Management of Jump Box.
-(The Private IP Addresses may vary relative to a deployment effort.)
+(The IP Addresses may vary relative to a deployment effort.)
 
+ELK-Stack = A VM configured as the ELK Stack server created through Ansible Docker Container in the Jump-Box-Provisioner VM.
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The web servers within the backend pool of the internal network are NOT exposed to the public Internet. 
 
-Only the **Jump Box** and **ELKServer** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- **107.3.134.166** (Relative to each implementation adminstrator for JumpBox and ElkServer.  Add and restrict as needed.)
+Only the **Jump-Box-Provisioner** and **ELK-Stack** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- **157.131.129.224**: Relative to the Administrator's console located outside the virtual network.
 
-Machines within the network can only be accessed by **Jump Box**.
-- **The Jump Box IP Address is 10.0.0.4**
+Machines within the network can only be accessed by **Jump Box Provisioner** VM.
+- **The Jump Box-Provisioner Private IP Address is 10.0.0.4**
 
 A summary of the access policies in place can be found in the table below.
 
