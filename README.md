@@ -48,28 +48,27 @@ The Virtual Machines details of each are as follows:
 | DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 |  Ubuntu 18.04    |      Yes      |
 | ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   |  Ubuntu 18.04    |      No       |
 
-(The IP Addresses may vary relative to a deployment effort.)
-
-ELK-Stack = A VM configured as the ELK Stack server created through Ansible Docker Container in the Jump-Box-Provisioner VM.
+(The IP Addresses will vary in different deployment effort.)
 
 ### Access Policies
 
 The web servers within the backend pool of the internal network are NOT exposed to the public Internet. 
 
-Only the **Jump-Box-Provisioner** and **ELK-Stack** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- **157.131.129.224**: Relative to the Administrator's console located outside the virtual network.
+Only the **Jump-Box-Provisioner** and **ELK-Stack** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses and restricted to specific Port traffic:
+- **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  (RSA Key Required.)
+- **Blue Team, Port 5601**:  ELK (Kibana) dashboard requests.  For the purpose of this project the Blue Team network was not defined.  In real world scenario, additional hardening could be added such as VPN or Key requirement.
 
-Machines within the network can only be accessed by **Jump Box Provisioner** VM.
-- **The Jump Box-Provisioner Private IP Address is 10.0.0.4**
+Machines within the network can only be accessed and configured by **Jump-Box-Provisioner** VM.
+- **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes                 | 107.3.134.166        |
-|          |                     |                      |
-| ElkServer| Yes                 | 107.3.134.166        |
-|          |                     | 10.0.0.4             |
+| Name                 | Publicly Accessible |      Allowed IP Addresses      |
+|----------------------|---------------------|--------------------------------|
+| Jump-Box-Provisioner | Yes                 | 157.131.129.224 (Port22 w/key) |
+|                      |                     |                      |
+| Elk-Stack            | Yes                 | 107.3.134.166 (Port 5601 Only) |
+|                      |                     | 10.0.0.4 (Jump-Box-Provisioner)|
 
 (Restriction set in Azure Network Security Group)
 
