@@ -13,9 +13,9 @@ The ANSIBLE files created for this repository create and configure the highlight
 ### Playbooks, Configuration Files, and SCREENSHOTS
 The Ansible files, known as **PLAYBOOKS**, contain YAML code and have beeen tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  The PLAYBOOKS can be used to recreate the entire deployment . Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.  NOTE: Configuration files also need to be placed prior to generaton for proper deployment. (See comments within each config file for target directory placement.)
 
-- ! [Playbook Files](./ansible/filebeat-playbook.yml)
-- ![ Configuration Files](./ansible/filebeat-playbook.yml)
-- ![ SCREENSHOTS of Implementation](./ansible/filebeat-playbook.yml)
+- ![Playbook Files](./ansible/filebeat-playbook.yml)
+- ![Configuration Files](./ansible/filebeat-playbook.yml)
+- ![SCREENSHOTS of Implementation](./ansible/filebeat-playbook.yml)
 
 This document contains additional project information outlined below. Details follow.
 - Description of the Topology
