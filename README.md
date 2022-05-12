@@ -3,7 +3,7 @@ In this project, I implement an ELK stack to monitor a website in a Microsoft Az
 
 Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
-- Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack server.
+- Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack.
 
 ## Deliverables
 The ANSIBLE files created for this repository generate and configure the highlighted orange areas in the following diagram.
