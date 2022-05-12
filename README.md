@@ -10,7 +10,7 @@ The files in this repository were used to configure the virtual network depicted
 
 ![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
-The following YAML files are the Ansible **PLAYBOOKS** that have beeen tested and used to generate a live ELK deployment from the Jump-Box-Provisioner VM.  They can be used to recreate the entire deployment pictured above. Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
+The files used are YAML files which serve as the Ansible **PLAYBOOKS** which have beeen tested and used to generate a live ELK deployment from the Ansible container within the Jump-Box-Provisioner VM.  They can be used to recreate the entire deployment pictured above. Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
 
 - ![Playbook Files](./ansible/filebeat-playbook.yml)
 
