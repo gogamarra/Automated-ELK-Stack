@@ -10,12 +10,11 @@ The ANSIBLE files created for this repository generate and configure the highlig
 
 ![ Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
-### Playbooks, Configuration Files, and SCREENSHOTS
+### Playbooks, Configuration Files
 The Ansible files, known as **PLAYBOOKS**, contain YAML code and have beeen tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  The PLAYBOOKS can be used to recreate the entire deployment . Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.  NOTE: Configuration files also need to be placed prior to generaton for proper deployment. (See comments within each config file for target directory placement.)
 
 - ![ANSIBLE Playbook Files](./ansible/filebeat-playbook.yml)
 - ![Configuration Files](./ansible/filebeat-playbook.yml)
-- ![SCREENSHOTS of Implementation](./ansible/filebeat-playbook.yml)
 
 This document contains additional project information outlined below. Details follow.
 - Description of the Topology
@@ -98,7 +97,7 @@ We have installed the following ELASTIC "Beats" data shippers on these machines:
 - **Metricbeats**
 
 These Beats allow us to collect the following information from the web servers.(DVWM-1, DVWA-2):
-- **Filebeat collects file system logs from DVWM-1, DVWA-2**
+- **Filebeat collects file system logs**
 - **Mertricbeat collects metrics from the operating system and from services running on the servers** 
 
 ### Using the Playbook
