@@ -6,14 +6,14 @@ Skills and knowledge demonstrated:
 - Deploying FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data and send to the ELK stack server.
 
 ## Deliverables
-The ANSIBLE files created for this repository create and configure the highlighted orange areas in the following diagram.
+The ANSIBLE files created for this repository generate and configure the highlighted orange areas in the following diagram.
 
 ![ Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
 ### Playbooks, Configuration Files, and SCREENSHOTS
 The Ansible files, known as **PLAYBOOKS**, contain YAML code and have beeen tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  The PLAYBOOKS can be used to recreate the entire deployment . Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.  NOTE: Configuration files also need to be placed prior to generaton for proper deployment. (See comments within each config file for target directory placement.)
 
-- ![Playbook Files](./ansible/filebeat-playbook.yml)
+- ![ANSIBLE Playbook Files](./ansible/filebeat-playbook.yml)
 - ![Configuration Files](./ansible/filebeat-playbook.yml)
 - ![SCREENSHOTS of Implementation](./ansible/filebeat-playbook.yml)
 
