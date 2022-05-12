@@ -1,16 +1,16 @@
 # Automated ELK Stack Deployment
 In this project, I implement an ELK stack to monitor a website in a Microsoft Azure cloud environment. 
 
-The skills and knowledge demonstrated:
+Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
 - Deploying FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data and send to the ELK stack server.
 
 ### Deliverables
-The files in this repository were used to configure the virtual network depicted below.
+The files created for and within this repository create and configure the highlighted orange areas in the following diagram.
 
 ![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
-The files used are YAML files which serve as the Ansible **PLAYBOOKS** which have beeen tested and used to generate a live ELK deployment from the Ansible container within the Jump-Box-Provisioner VM.  They can be used to recreate the entire deployment pictured above. Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
+The files contain YAML code and serve as the Ansible **PLAYBOOKS**, which have beeen tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker container within the Jump-Box-Provisioner VM.  The PLAYBOOKS can be used to recreate the entire deployment . Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
 
 - ![Playbook Files](./ansible/filebeat-playbook.yml)
 
