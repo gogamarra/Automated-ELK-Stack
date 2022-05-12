@@ -41,12 +41,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The Virtual Machines details of each are as follows:
 
-|         Name         | Function  | Private IP |    Public IP   | Operating System | Load Balanced |
-|----------------------|-----------|------------|----------------|------------------|---------------|
-| Jump-Box-Provisioner | Gateway   |  10.0.0.4  | 52.247.211.204 |  Ubuntu 18.04    |      No       |
-| DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 |  Ubuntu 18.04    |      Yes      |
-| DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 |  Ubuntu 18.04    |      Yes      |
-| ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   |  Ubuntu 18.04    |      No       |
+|         Name         | Function  | Private IP |    Public IP   |  Operating System  | Load Balanced |
+|----------------------|-----------|------------|----------------|--------------------|---------------|
+| Jump-Box-Provisioner | Gateway   |  10.0.0.4  | 52.247.211.204 | Linux-Ubuntu 18.04 |      No       |
+| DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
+| DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 | Linjx-Ubuntu 18.04 |      Yes      |
+| ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |      No       |
 
 (The IP Addresses will vary in different deployment effort.)
 
