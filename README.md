@@ -1,10 +1,11 @@
 # Automated ELK Stack Deployment
-In this portfolio project, I implemented a cloud monitoring system in a virtual network by configuring an ELK stack server to receive data from web servers. (The network was created previously in another portfolio project.)
+In this project, I implement an ELK stack to monitor a website in a Microsoft Azure cloud environment. 
 
 The skills and knowledge demonstrated:
-- Using ANSIBLE provisioning software and DOCKER container environments.
-- Deploying a new ELK stack virtual server using auto-generation techniques.
-- Deploy FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data to send to the ELK stack server.
+- Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
+- Deploying FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data and send to the ELK stack server.
+
+The files in this repository were used to configure the virtual network depicted below.
 
 ### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
