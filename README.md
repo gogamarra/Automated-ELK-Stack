@@ -74,7 +74,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
 - **The Administrator can rerun the configuration as many times and more easily as needed than if we had to configure physical machines or fully deployed VM's.  Thus we can also more easily ensure multiple instances have the same configuration at setup.**
 
 The playbook implements the following tasks:
@@ -91,12 +91,15 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - **DVWA-VM1 (10.0.0.5)**
+- **DVWA-VM2 (10.0.0.6)**
 
-We have installed the following Beats on these machines:
+We have installed the following ELASTIC "Beats" data shippers on these machines:
 - **filebeats**
+- **Metricbeats**
 
-These Beats allow us to collect the following information from each machine:
-- **Filebeat collects file system logs from DVWM-1**
+These Beats allow us to collect the following information from the web servers.(DVWM-1, DVWA-2):
+- **Filebeat collects file system logs from DVWM-1, DVWA-2**
+- **Mertricbeat collects metrics from the operating system and from services running on the servers** 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
