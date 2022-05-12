@@ -5,15 +5,14 @@ The skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
 - Deploying FILEBEAT and METRICBEAT lightweight shippers on web servers to collect data and send to the ELK stack server.
 
+### Deliverables
 The files in this repository were used to configure the virtual network depicted below.
 
-### Network Diagram (Post-Deployment)
 ![Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
-### Instruction and Configuration files Used for Deployment
-The following YAML code files are the ANSIBLE **PLAYBOOKS** that have beeen tested and used to generate a live ELK deployment on an AZURE virtual network.  They can be used to recreate the entire deployment pictured above. (See Network Diagram).  Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
+The following YAML files are the Ansible **PLAYBOOKS** that have beeen tested and used to generate a live ELK deployment from the Jump-Box-Provisioner VM.  They can be used to recreate the entire deployment pictured above. Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.
 
-- ![Playbook File](./ansible/filebeat-playbook.yml)
+- ![Playbook Files](./ansible/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
