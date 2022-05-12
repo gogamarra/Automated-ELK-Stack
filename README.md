@@ -17,14 +17,13 @@ The Ansible files, known as **PLAYBOOKS**, contain YAML code and have beeen test
 - ![Configuration Files](./ansible/filebeat-playbook.yml)
 - ![Screenshots of Implementation](./ansible/filebeat-playbook.yml)
 
-This document contains the following details below:
+This document contains additional project information outlined below. Details follow.
 - Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
-
 
 ### Description of the Topology
 
