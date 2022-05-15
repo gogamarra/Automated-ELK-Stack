@@ -39,6 +39,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on)**
 
 The Virtual Machines details of each are as follows:
+(The IP Addresses will vary in different deployment effort.)
 
 |         Name         | Function  | Private IP |    Public IP   |  Operating System  | Load Balanced |
 |----------------------|-----------|------------|----------------|--------------------|---------------|
@@ -46,8 +47,6 @@ The Virtual Machines details of each are as follows:
 | DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
 | DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
 | ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |      No       |
-
-(The IP Addresses will vary in different deployment effort.)
 
 ### Access Policies
 
