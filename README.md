@@ -68,14 +68,12 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 
 <ins>Summary of Access Policies</ins>
 
-| VM Name              |     Administrative Accesss      |    Data Requests Allowed From  |
+| VM Name              |     Administrative Accesss      |   Cloud Requests Allowed       |
 |----------------------|---------------------------------|--------------------------------|
-| Jump-Box-Provisioner | 157.131.129.224 (Port22 w/key)  |             NA                 |
-|                      |                                 |
-| Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only)
-|                      |                                 |
-| DVWA1, DVWA2         | 10.0.0.4 (Jump-Box-Provisioner) | Load Balancer
-
+| Jump-Box-Provisioner | 157.131.129.224 (Port22 w/key)  |             No                 |
+| Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only) |
+| DVWA1, DVWA2         | 10.0.0.4 (Jump-Box-Provisioner) | Load Balancer (Port 80 Only)   |
+##
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
