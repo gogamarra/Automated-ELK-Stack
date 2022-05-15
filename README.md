@@ -55,7 +55,7 @@ The main purpose of this network is to expose a load balanced and monitored inst
 
 <ins>Firewall</ins> functionality is performed by and set within the Azure Network Security Group.
 
-<ins>DVWA web servers</ins>, defined as within the backend pool of the load balancers, are NOT exposed directly to the public Internet and are restricted to http traffic only when they receive an external request. 
+<ins>DVWA web servers</ins> are NOT exposed directly to the public Internet, but and are restricted to http requests only when received via the load balancer.  Internal hardening of the DVWA servers is outside the scope of this excercise. 
 
 <ins>Jump-Box-Provisioner</ins> is the only VM that can accept SSH connections from the Internet. Access to this VM is only allowed from the following IP addresses and restricted to specific SSH Port traffic:
 - **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  
