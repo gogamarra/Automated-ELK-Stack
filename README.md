@@ -36,7 +36,7 @@ The main purpose of this network is to expose a load balanced and monitored inst
 
 - **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case.**
 
-<ins>ELK server</ins> integration allows defenders to monitor vulnerable web servers for changes in:
+<ins>ELK Stack</ins> integration allows defenders to monitor vulnerable web servers for changes in:
 - **The file system, which is captured in log files**
 - **Machine metrics, such as VM usage, in particular CPU usage and uptime**
 
@@ -74,7 +74,7 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 | Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only) |
 | DVWA1, DVWA2         | 10.0.0.4 (Jump-Box-Provisioner) | Load Balancer (Port 80 Only)   |
 ##
-### Elk Configuration
+### ELK Stack Configuration
 
 ANSIBLE provisioning sofware was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
 - **The Administrator can rerun the configuration more easily as needed than if we had to configure physical machines or fully deployed VM's.  Thus we can also more easily ensure multiple instances have the same configuration at setup.**
@@ -89,25 +89,25 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 - ![Docker PS Screenshot](./diagrams/docker_ps_output.png)
-
+##
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
+The ELK Stack server is configured to monitor the following web servers:
 - **DVWA-VM1 (10.0.0.5)**
 - **DVWA-VM2 (10.0.0.6)**
 
-We have installed the following ELASTIC "Beats" data shippers on these machines:
-- **filebeats**
-- **Metricbeats**
+Ie have installed the following ELASTIC "Beats" lightweight shippers on the monitored machines facilitate collection and sending of data to the ELK Stack:
+- **Filebeat**
+- **Metricbeat**
 
-These Beats allow us to collect the following information from the web servers.(DVWM-1, DVWA-2):
+These Beats allow us to collect the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Mertricbeat collects metrics from the operating system and from services running on the servers** 
-
+##
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the **/files/filebeat-configuration.yml** file to **filebeat.yml file**.
+- Copy the **/files/filebeat-config.yml** file to **filebeat.yml file**.
 - Update the **/etc/ansible/hosts** file to include ports
 - Run the playbook, and navigate to **http://[ElkserverIP]:5601** to check that the installation worked as expected.
 
