@@ -6,7 +6,7 @@ Skills and knowledge demonstrated:
 - Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack.
 ##
 ## Deliverables
-The ANSIBLE files created for this repository generate and configure the highlighted orange areas in the following diagram.
+- ANSIBLE files that generate and configure the highlighted orange areas in the following diagram.
 
 ![ Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
 
