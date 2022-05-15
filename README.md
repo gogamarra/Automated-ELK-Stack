@@ -40,7 +40,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The Virtual Machines details of each are as follows:
 
-(The IP Addresses will vary in different deployment effort.)
+(The public IP addresses will vary by deployment effort.)
 
 |         Name         | Function  | Private IP |    Public IP   |  Operating System  | Load Balanced |
 |----------------------|-----------|------------|----------------|--------------------|---------------|
