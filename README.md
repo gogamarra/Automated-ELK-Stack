@@ -44,35 +44,37 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 (The public IP addresses will vary by deployment effort.)
 
-|         Name         | Function  | Private IP |    Public IP   |  Operating System  | Load Balanced |
-|----------------------|-----------|------------|----------------|--------------------|---------------|
-| Jump-Box-Provisioner | Gateway   |  10.0.0.4  | 52.247.211.204 | Linux-Ubuntu 18.04 |      No       |
-| DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
-| DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
-| ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |      No       |
+|         Name         | Function  | Load Balancer | Private IP |    Public IP   |  Operating System  |
+|----------------------|-----------|---------------|------------|----------------|--------------------|
+| Jump-Box-Provisioner | Gateway   |      No       |  10.0.0.4  | 52.247.211.204 | Linux-Ubuntu 18.04 |
+| DVWA-VM1             | Webserver |      Yes      |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |
+| DVWA-VM2             | Webserver |      Yes      |  10.0.0.6  | 52.191.166.158 | Linux-Ubuntu 18.04 |
+| ELK-Stack            | ELKserver |      No       |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |
 ##
 ### Access Policies
 
 <ins>Firewall</ins> functionality is performed by and set within the Azure Network Security Group.
 
-<ins>DVWA web servers</ins>, defined as within the backend pool of the load balancers, are NOT exposed directly to the public Internet and are restricted to http traffic only when they receive an externa request. 
+<ins>DVWA web servers</ins>, defined as within the backend pool of the load balancers, are NOT exposed directly to the public Internet and are restricted to http traffic only when they receive an external request. 
 
-<ins>Jump-Box-Provisioner</ins> is thye only VM that can accept SSH connections from the Internet. Access to these machine is only allowed from the following IP addresses and restricted to specific Port traffic:
-- **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  (RSA Key Required.)
+<ins>Jump-Box-Provisioner</ins> is the only VM that can accept SSH connections from the Internet. Access to this VM is only allowed from the following IP addresses and restricted to specific SSH Port traffic:
+- **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  
+- The SSH traffic is secured with a shared RSA Key between the external administrator and Jump Box.
 
 Machines within the network can only be accessed and configured by **Jump-Box-Provisioner** VM.
 - **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
 - 
-<ins>ELK Stack</ins> server can only accept external requests for Kibana data via browser traffic and only port 5601.
+<ins>ELK Stack</ins> server externally facing can only accept requests for Kibana data via browser traffic and port 5601.
 
 <ins>Summary of Access Policies</ins>
 
-| Name                 | Publicly Accessible |      Allowed IP Addresses      |
-|----------------------|---------------------|--------------------------------|
-| Jump-Box-Provisioner | Yes                 | 157.131.129.224 (Port22 w/key) |
-|                      |                     |                      |
-| Elk-Stack            | Yes                 | 107.3.134.166 (Port 5601 Only) |
-|                      |                     | 10.0.0.4 (Jump-Box-Provisioner)|
+| VM Name              |     Administrative Accesss      |    Data Requests Allowed From  |
+|----------------------|---------------------------------|--------------------------------|
+| Jump-Box-Provisioner | 157.131.129.224 (Port22 w/key)  |             NA                 |
+|                      |                                 |
+| Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only)
+|                      |                                 |
+| DVWA1, DVWA2         | 10.0.0.4 (Jump-Box-Provisioner) | Load Balancer
 
 ### Elk Configuration
 
