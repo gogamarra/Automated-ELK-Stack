@@ -4,7 +4,7 @@ In this project, I implement an ELK stack to monitor a website in a Microsoft Az
 Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
 - Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack.
-
+##
 ## Deliverables
 The ANSIBLE files created for this repository generate and configure the highlighted orange areas in the following diagram.
 
@@ -23,22 +23,24 @@ This document contains additional project information outlined below.
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
-
+##
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA (a.k.a: the D*mn Vulnerable Web Application.)
 
-Load balancing ensures that the application will be highly **available**, in addition to restricting **traffic** to the network.
+<ins>Load balancing </ins>  ensures that the application will be highly **available**, in addition to restricting **traffic** to the network.
 
 - **Load Balancers protect the availability aspected of networked environments. On a normal basis, the load balancer can handle initial communication with incoming client request thus releasing the application from these tasks thus allowing applications to respond quicker.  In an extreme security situation, load balancers can help to diminish effects of DDoS (Distributed Denial Of Service) attack by redirecting malicious traffic to alternative sources so as not to overwhelm and deny access to the main application servers.** 
 
-- **A Jump Box has significant efficiency and consistancy advantages in a cloud environment.  If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case via the jump box.**
+<ins>Jump Box</ins> advantages included efficiency and consistancy in a cloud environment
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to:
+- **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case via the jump box.**
+
+<ins>ELK server integration</ins> allows users to easily monitor the vulnerable VMs for changes to:
 - **The file system, which traditionally in the past has been captured by log files**
 - **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on)**
 
-The Virtual Machines details of each are as follows:
+<ins>Virtual Machines</ins>
 
 (The public IP addresses will vary by deployment effort.)
 
@@ -48,21 +50,22 @@ The Virtual Machines details of each are as follows:
 | DVWA-VM1             | Webserver |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
 | DVWA-VM2             | Webserver |  10.0.0.6  | 52.191.166.158 | Linux-Ubuntu 18.04 |      Yes      |
 | ELK-Stack            | ELKserver |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |      No       |
-
+##
 ### Access Policies
 
-(This section makes reference to the network diagram above)
+<ins>Firewall</ins> functionality is performed by and set within the Azure Network Security Group.
 
-#### The DVWA web servers within the defined backend pool of the internal network are NOT exposed to the public Internet. 
+<ins>DVWA web servers</ins>, defined as within the backend pool of the load balancers, are NOT exposed directly to the public Internet and are restricted to http traffic only when they receive an externa request. 
 
-Only the **Jump-Box-Provisioner** and **ELK-Stack** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses and restricted to specific Port traffic:
+<ins>Jump-Box-Provisioner</ins> is thye only VM that can accept SSH connections from the Internet. Access to these machine is only allowed from the following IP addresses and restricted to specific Port traffic:
 - **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  (RSA Key Required.)
-- **Blue Team, Port 5601**:  ELK (Kibana) dashboard requests from user's browser.  (NOTE: For the purpose of this excercise,the Blue Team's external network was not defined and uses unsecure http-port 80.  In real a world scenario, additional hardening would be added to make communication secure such as adding VPN or https/site certificates between the external Blue team and the ELK server. Switching to SecAAS (Security as a Service) from the cloud could also be considered.)
 
 Machines within the network can only be accessed and configured by **Jump-Box-Provisioner** VM.
 - **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
+- 
+<ins>ELK Stack</ins> server can only accept external requests for Kibana data via browser traffic and only port 5601.
 
-A summary of the access policies in place can be found in the table below.
+<ins>Summary of Access Policies</ins>
 
 | Name                 | Publicly Accessible |      Allowed IP Addresses      |
 |----------------------|---------------------|--------------------------------|
@@ -70,8 +73,6 @@ A summary of the access policies in place can be found in the table below.
 |                      |                     |                      |
 | Elk-Stack            | Yes                 | 107.3.134.166 (Port 5601 Only) |
 |                      |                     | 10.0.0.4 (Jump-Box-Provisioner)|
-
-(Restriction set in Azure Network Security Group)
 
 ### Elk Configuration
 
