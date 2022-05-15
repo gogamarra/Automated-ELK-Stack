@@ -51,11 +51,13 @@ The Virtual Machines details of each are as follows:
 
 ### Access Policies
 
-The web servers within the backend pool of the internal network are NOT exposed to the public Internet. 
+(This section makes reference to the network diagram above)
+
+#### The DVWA web servers within the defined backend pool of the internal network are NOT exposed to the public Internet. 
 
 Only the **Jump-Box-Provisioner** and **ELK-Stack** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses and restricted to specific Port traffic:
 - **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  (RSA Key Required.)
-- **Blue Team, Port 5601**:  ELK (Kibana) dashboard requests.  For the purpose of this project the Blue Team network was not defined.  In real world scenario, additional hardening could be added such as VPN or Key requirement.
+- **Blue Team, Port 5601**:  ELK (Kibana) dashboard requests from user's browser.  (NOTE: For the purpose of this excercise,the Blue Team's external network was not defined and uses unsecure http-port 80.  In real a world scenario, additional hardening would be added to make communication secure such as adding VPN or https/site certificates between the external Blue team and the ELK server. Switching SecAAS (Security as a Service) from the cloud could also be considered.)
 
 Machines within the network can only be accessed and configured by **Jump-Box-Provisioner** VM.
 - **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
