@@ -26,7 +26,7 @@ This document contains additional project information:
 ##
 ### Description of the Topology
 
-The main purpose of this network is to expose a load balanced and monitored instance of DVWA (a.k.a: the D*mn Vulnerable Web Application.)
+The main purpose of this network is to expose a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
 
 <ins>Load balancing </ins>  ensures that the application will be **highly available**, in addition to **restricting traffic** to the network.
 
@@ -34,7 +34,7 @@ The main purpose of this network is to expose a load balanced and monitored inst
 
 <ins>Jump Box</ins> advantages included efficiency and consistancy in a cloud environment
 
-- **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case via the jump box.**
+- **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case.**
 
 <ins>ELK server integration</ins> allows users to easily monitor the vulnerable VMs for changes to:
 - **The file system, which traditionally in the past has been captured by log files**
