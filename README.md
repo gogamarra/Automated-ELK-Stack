@@ -39,6 +39,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on)**
 
 The Virtual Machines details of each are as follows:
+
 (The IP Addresses will vary in different deployment effort.)
 
 |         Name         | Function  | Private IP |    Public IP   |  Operating System  | Load Balanced |
