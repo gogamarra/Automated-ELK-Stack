@@ -40,7 +40,7 @@ The main purpose of this network is to expose a load balanced and monitored inst
 - **The file system, which is captured in log files**
 - **Machine metrics, such as VM usage, in particular CPU usage and uptime**
 
-<ins>Virtual Machines</ins>
+<ins>Summary of Virtual Machines</ins>
 
 (The public IP addresses will vary by deployment effort.)
 
