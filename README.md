@@ -107,12 +107,9 @@ These Beats allow us to collect the following information from the web servers.:
 In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the **/files/filebeat-config.yml** file to **filebeat.yml file**.
-- Update the **/etc/ansible/hosts** file to include ports
-- Run the playbook, and navigate to **http://[ElkserverIP]:5601** to check that the installation worked as expected.
+- Copy the **filebeat-config.yml** and place /etc/ansible/roles directory
 
-_Answer the following questions to fill in the blanks:_
-- Which file is the playbook? **filebeat-playbook.yml** Where do you copy it? **/roles/filebeat.yml**
-- Which file do you update to make Ansible run the playbook on a specific machine? **/etc/ansible/hosts**
-- How do I specify which machine to install the ELK server on versus which to install Filebeat on? **hosts: elkserver**
-- Which URL do you navigate to in order to check that the ELK server is running? **http://[ElkserverIP]:5601**
+
+- Update the **/etc/ansible/hosts** file to
+      -  define the [webservers] and [elkserver] sections of the target private IP address.
+- Run the playbook, and navigate to **http://[ElkserverIP]:5601** to check that the installation worked as expected.
