@@ -36,9 +36,9 @@ The main purpose of this network is to expose a load balanced and monitored inst
 
 - **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case.**
 
-<ins>ELK server integration</ins> allows users to easily monitor the vulnerable VMs for changes to:
-- **The file system, which traditionally in the past has been captured by log files**
-- **Machine metrics, or VM usage in particular CPU usage and uptime (or how low a has a machine has been on)**
+<ins>ELK server integration</ins> allows users to easily monitor the vulnerable VMs changes in:
+- **The File system, which traditionally in the past has been captured by log files**
+- **Machine metrics, such as VM usage, in particular CPU usage and uptime**
 
 <ins>Virtual Machines</ins>
 
