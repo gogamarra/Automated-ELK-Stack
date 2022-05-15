@@ -95,7 +95,7 @@ The ELK Stack server is configured to monitor the following web servers:
 - **DVWA-VM1 (10.0.0.5)**
 - **DVWA-VM2 (10.0.0.6)**
 
-Ie have installed the following ELASTIC "Beats" lightweight shippers on the monitored machines facilitate collection and sending of data to the ELK Stack:
+I have installed the following ELASTIC "Beats" lightweight shippers on the monitored machines facilitate collection and sending of data to the ELK Stack:
 - **Filebeat**
 - **Metricbeat**
 
