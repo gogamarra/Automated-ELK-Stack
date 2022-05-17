@@ -91,16 +91,17 @@ The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOO
 - ![Docker PS Screenshot](./diagrams/docker_ps_output.png)
 - ![ELK-Playbook-Success](./Screenshots/install-ELK.jpg)
 ##
-### Target Machines & Beats
+### Machines Being Monitored
 The ELK Stack server is configured to monitor the following web servers:
 - **DVWA-VM1 (10.0.0.5)**
 - **DVWA-VM2 (10.0.0.6)**
-
+##
+### BEATS in Use
 I have installed the following ELASTIC "Beats" lightweight shippers on the monitored machines facilitate collection and sending of data to the ELK Stack:
 - **Filebeat**
 - **Metricbeat**
 
-These Beats allow us to collect the following information from the web servers.:
+These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Mertricbeat collects metrics from the operating system and from services running on the servers** 
 ##
