@@ -102,16 +102,27 @@ These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Mertricbeat collects metrics from the operating system and from services running on the servers** 
 ##
-## SCREENSHOTS - Success Build and Dashboard Confirmation
+## SCREENSHOTS - Successful Build and Dashboard Working Confirmation
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
+##
+- PLAYBOOK: Create/Configure/Start ELK Stack
 
-- ![ELK-Playbook-Success](./images/install-elk.jpg)
-- ![Filebeat-Playbook-Success](./images/install-filebeat.jpg)
-- ![Metricbeat-Playbook-Success](./images/install-metricbeat.jpg)
-- ![filebeat System Overview](./images/dashboard-filebeat-system.jpg)
-- ![Metricbeat System Overview](./images/dashboard-metricbeat-system.jpg)
-- ![Metricbeat Host Overview](./images/dashboard-metricbeat-host.jpg)
-- ![Metricbeat Container Overview](./images/dashboard-metricbeat-containers.jpg)
+![ELK-Playbook-Success](./images/install-elk.jpg)
+##
+- PLAYBOOK: Configure Web Servers with FILEBEAT
+
+![Filebeat-Playbook-Success](./images/install-filebeat.jpg)
+##
+- PLAYBOOK:  Configure Web Servers with METRICBEAT
+
+![Metricbeat-Playbook-Success](./images/install-metricbeat.jpg)
+##
+- DASHBOARDS Working and Receiving Data
+
+![filebeat System Overview](./images/dashboard-filebeat-system.jpg)
+![Metricbeat System Overview](./images/dashboard-metricbeat-system.jpg)
+![Metricbeat Host Overview](./images/dashboard-metricbeat-host.jpg)
+![Metricbeat Container Overview](./images/dashboard-metricbeat-containers.jpg)
 ##
 ### How to Use the Ansible Playbook Builds
 In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
