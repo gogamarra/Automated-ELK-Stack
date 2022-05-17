@@ -8,7 +8,7 @@ Skills and knowledge demonstrated:
 ## Deliverables
 - ANSIBLE files that generate and configure the highlighted orange areas in the following diagram.
 
-![ Deployment Architecture](./diagrams/NetworkDiagram-ELK.jpg)
+![ Deployment Architecture](./diagrams/network-diagram-elk.jpg)
 
 ### Playbooks, Configuration Files
 The Ansible files, known as **PLAYBOOKS**, contain YAML code and have beeen tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  The PLAYBOOKS can be used to recreate the entire deployment . Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.  (See comments within each config file for target directory placement.)
@@ -105,9 +105,13 @@ These Beats allow collecting the following information from the web servers.:
 ## SCREENSHOTS - Success Build and Dashboard Confirmation
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
 
-- ![ELK-Playbook-Success](./screenshots/install-ELK.jpg)
-- ![Filebeat-Playbook-Success](./screenshots/install-filebeat.jpg)
-- ![Filebeat-Playbook-Success](./screenshots/install-metricbeat.jpg)
+- ![ELK-Playbook-Success](./images/install-elk.jpg)
+- ![Filebeat-Playbook-Success](./images/install-filebeat.jpg)
+- ![Metricbeat-Playbook-Success](./images/install-metricbeat.jpg)
+- ![filebeat System Overview](./images/dashboard-filebeat-system.jpg)
+- ![Metricbeat System Overview](./images/dashboard-metricbeat-system.jpg)
+- ![Metricbeat Host Overview](./images/dashboard-metricbeat-host.jpg)
+- ![Metricbeat Container Overview](./images/dashboard-metricbeat-containers.jpg)
 ##
 ### How to Use the Ansible Playbook Builds
 In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
