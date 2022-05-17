@@ -86,9 +86,10 @@ The playbook implements the following tasks:
 - **Pip Module Usage**
 - **Downloads and launches the ELK Container**
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
 
 - ![Docker PS Screenshot](./diagrams/docker_ps_output.png)
+- ![ELK-Playbook-Success](./screenshots/install-ELK.jpg)
 ##
 ### Target Machines & Beats
 The ELK Stack server is configured to monitor the following web servers:
