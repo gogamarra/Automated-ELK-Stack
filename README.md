@@ -20,9 +20,9 @@ This document contains additional project information:
 - Description of Topology
 - Access Policies
 - ELK Configuration
-  - Beats in Use
   - Machines Being Monitored
-  - SCREENSHOTS - Successful Configuration From Ansible
+  - Beats in Use
+- SCREENSHOTS - Success Build and Dashboard Confirmation
 - How to Use the Ansible Playbook Builds
 ##
 ### Description of the Topology
@@ -75,7 +75,7 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 | Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only) |
 | DVWA1, DVWA2         | 10.0.0.4 (Jump-Box-Provisioner) | Load Balancer (Port 80 Only)   |
 ##
-### ELK Stack Configuration
+## ELK Configuration
 
 ANSIBLE provisioning sofware was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
 - **The Administrator can rerun the configuration more easily as needed than if we had to configure physical machines or fully deployed VM's.  Thus we can also more easily ensure multiple instances have the same configuration at setup.**
@@ -102,7 +102,7 @@ These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Mertricbeat collects metrics from the operating system and from services running on the servers** 
 ##
-###SCREENSHOTS - Successful Build Confirmation
+## SCREENSHOTS - Success Build and Dashboard Confirmation
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
 
 
