@@ -105,9 +105,9 @@ These Beats allow collecting the following information from the web servers.:
 ## SCREENSHOTS - Success Build and Dashboard Confirmation
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
 
-
-- ![ELK-Playbook-Success](./Screenshots/install-ELK.jpg)
-
+- ![ELK-Playbook-Success](./screenshots/install-ELK.jpg)
+- ![Filebeat-Playbook-Success](./screenshots/install-filebeat.jpg)
+- ![Filebeat-Playbook-Success](./screenshots/install-metricbeat.jpg)
 ##
 ### How to Use the Ansible Playbook Builds
 In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
