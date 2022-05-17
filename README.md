@@ -22,7 +22,7 @@ This document contains additional project information:
 - ELK Configuration
   - Beats in Use
   - Machines Being Monitored
-- How to Use the Ansible Build
+- How to Use the Ansible Playbook Builds
 ##
 ### Description of the Topology
 
@@ -89,7 +89,7 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
 
 - ![Docker PS Screenshot](./diagrams/docker_ps_output.png)
-- ![ELK-Playbook-Success](./screenshots/install-ELK.jpg)
+- ![ELK-Playbook-Success](./Screenshots/install-ELK.jpg)
 ##
 ### Target Machines & Beats
 The ELK Stack server is configured to monitor the following web servers:
@@ -104,7 +104,7 @@ These Beats allow us to collect the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Mertricbeat collects metrics from the operating system and from services running on the servers** 
 ##
-### Using the Playbook
+### How to Use the Ansible Playbook Builds
 In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
