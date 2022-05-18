@@ -128,8 +128,11 @@ The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOO
 In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
+- Refer to the Git repository at top of page for file copies
 - Copy **ansible.cfg** to /etc/ansible
-- Copy **filebeat-config.yml** and place /etc/ansible/roles directory
-- Copy **metricbeat-config.yml** and place /etc/ansible/roles directory
+- Copy **filebeat-config.yml** and **metricbeat-config.yml** to /etc/ansible/files
+- Copy **install-DVWA.yml** and **install-elk.yml** to /etc/ansible.  See comment in install-elk.yml for troubleshooting issues.
+- Copy **filebeat-playbook.yml** and **metricbeat-playbook.yml** to /etc/ansible/roles
 - Update the **/etc/ansible/hosts** file sections [webservers] and [elkserver] with target private IP address.
-- Run the playbook, and navigate to **http://[ElkserverIP]:5601** to check that the installation worked as expected.
+- Run the playbooks using the **ansible-playbook [playbook]** command.
+- Navigate to **http://[ElkserverIP]:5601** to check that the installation worked as expected.
