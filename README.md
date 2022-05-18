@@ -134,5 +134,5 @@ SSH into the control node and follow the steps below:
 - Copy **install-DVWA.yml** and **install-elk.yml** to /etc/ansible.  See comment in install-elk.yml for troubleshooting issues.
 - Copy **filebeat-playbook.yml** and **metricbeat-playbook.yml** to /etc/ansible/roles
 - Update the **/etc/ansible/hosts** file sections [webservers] and [elkserver] with target private IP address.
-- Run the playbooks using the **ansible-playbook [playbook]** command.
+- Run the playbooks using the  `ansible-playbook [filename]` command.
 - Navigate to **http://[ElkserverIP]:5601** to check that the installation worked as expected.
