@@ -103,7 +103,7 @@ These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Metricbeat collects performance data from the operating system and from services running on the servers** 
 ##
-## SCREENSHOTS - Successful Build and Dashboard Working Confirmation
+## SCREENSHOTS - Successful Build and Working Dashboard
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
 ##
 - PLAYBOOK: Create/Configure/Start ELK Stack
