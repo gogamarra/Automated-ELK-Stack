@@ -81,7 +81,7 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 ANSIBLE provisioning software was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
 - **The Administrator can rerun the configuration more easily as needed than if we had to configure physical machines or fully deployed VM's.  Thus we can also more easily ensure multiple instances have the same configuration at setup.**
 
-The playbook implements the following tasks:
+The ELK playbook implements the following tasks:
 - **Increases Virtual Memory**
 - **Installs Docker**
 - **Installs Pip**
