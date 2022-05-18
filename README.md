@@ -104,7 +104,10 @@ These Beats allow collecting the following information from the web servers.:
 - **Metricbeat collects performance data from the operating system and from services running on the servers** 
 ##
 ## SCREENSHOTS - Successful Build and Working Dashboard
-The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
+The following images display the actual results after running `DOCKER-ANSIBLE` PLAYBOOKS.  
+- The ELK stack server was deployed.
+- Beats data shippers were installed on the webservers.
+- Dashboards can be generated from captured data activity.
 ##
 - PLAYBOOK: Create/Configure/Start ELK Stack
 
