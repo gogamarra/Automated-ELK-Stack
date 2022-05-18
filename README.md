@@ -125,7 +125,7 @@ The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOO
 ![Metricbeat Container Overview](./images/dashboard-metricbeat-containers.jpg)
 ##
 ### How to Use the Ansible Playbook Builds
-In order to use the PLAYBOOKS, you will need to have an Ansible control already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
+In order to use the PLAYBOOKS, you will need to have Ansible already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
 - Refer to the Git repository at top of page for file copies
