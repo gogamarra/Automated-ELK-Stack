@@ -65,7 +65,7 @@ The main purpose of this network is to prepare a load balanced and monitored ins
 Machines within the network can only be accessed and configured by **Jump-Box-Provisioner** VM.
 - **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
 
-<ins>ELK Stack</ins> server can only except external request for Kibana data via port 5601.
+<ins>ELK Stack</ins> server can only accept external request for Kibana data through port 5601.
 
 <ins>Summary of Access Policies</ins>
 
