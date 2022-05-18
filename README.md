@@ -8,7 +8,7 @@ Skills and knowledge demonstrated:
 ## Deliverables
 - ANSIBLE files that generate and configure the highlighted orange areas in the following diagram.
 
-![ Deployment Architecture](./images/network-diagram-elk.jpg)
+![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
 
 ### Playbooks, Configuration Files
 The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  Use the PLAYBOOKS to recreate the entire deployment. Alternately, use select portions of a PLAYBOOK to install only certain functions desired.  For example, install FILEBEAT, but not METRICBEAT.  (See comments within each configuration file for target directory placement.)
