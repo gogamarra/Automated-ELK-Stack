@@ -1,0 +1,41 @@
+#This playbook installs a Filebeat shipper on the DVWA web servers to share data with the Elk Stack.
+# 1) Place this file in the /etc/ansible/roles directory of the Ansible control node.
+# 2) Ensure the /etc/ansible/host file has the correct private IP addresses
+#       of the target machines defined in the [webservers] section.
+# 3) Ensure the /etc/ansible/ansible.cfg file has the "remote_user" and "log_path" defined
+# 4) Ensure the /etc/ansible/filebeat-config.yml file has the proper values. See repository file comments.
+# 5) Use the "ansible-playbook [playbook]" command to execute.
+# - Created by George Gamarra
+---
+- name: Install and Launch Filebeat
+  hosts: webservers
+  remote_user: sysadmin
+  become: yes
+  tasks:
+
+# Use command module
+  - name: Download filebeat .deb file
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb
+
+# Use command module
+  - name: Install filebeat .deb
+    command: dpkg -i filebeat-7.4.0-amd64.deb
+
+# Use copy module
+  - name: Drop in filebeat.yml
+    copy:
+      src: /etc/ansible/files/filebeat-config.yml
+      dest: /etc/filebeat/filebeat.yml
+
+# Use command module
+  - name: Enable and Configure System Module
+    command: filebeat modules enable system
+
+# Use command module
+  - name: Setup filebeat
+    command: filebeat setup
+
+# Use command module
+  - name: Start filebeat service
+    command: service filebeat start
+

@@ -1,0 +1,63 @@
+#This playbook creates/configures the ELK stack server.
+# 1) Place this file in the /etc/ansible directory of the Ansible control node.
+# 2) Ensure the /etc/ansible/host file has the correct private IP addresses
+#       of the target machines defined in the [elkservers] section.
+# 3) Ensure the /etc/ansible/ansible.cfg file has the "remote_user" and "log_path" defined
+# 4) Use the "ansible-playbook [playbook]" command to execute.
+# 5) The ELK server requires 1-2 minutes to complete startup after the playbook ends.
+#         If the dashboard appears, but does not display data, try the following commands
+#            sudo docker kill elk
+#            sudo service docker restart
+#            sudo docker rm elk
+#            "Restart the Vitrual Machine and Rerun ton Elk playbook"
+#
+# - Created by George Gamarra 
+---
+- name: Config elk VM with Docker
+  hosts: elkservers
+  remote_user: elkadmin
+  become: true
+  tasks:
+# The Docker engine, used for running containers
+    - name: Install Docker.io
+      apt:
+        update_cache: yes
+        force_apt_get: yes
+        name: docker.io
+        state: present
+# Package used to install Python software
+    - name: Install pip3
+      apt:
+        force_apt_get: yes
+        name: python3-pip
+        state: present
+# Python client for Docker.  Required by ELK
+    - name: Install Python Module
+      pip:
+        name: docker
+        state: present
+# Configure elk VM to use more memory for better performance
+    - name: Use More Memory
+      sysctl:
+        name: vm.max_map_count
+        value: "262144"
+        state: present
+        reload: yes
+# Download ELK container. Publish Ports
+# Port 5601 (Kibana), 9200 (Elasticsearch), 5044 (Logstash)
+    - name: download and launch a docker elk container
+      docker_container:
+        name: elk
+        image: sebp/elk:761
+        state: started
+        restart_policy: always
+        published_ports:
+          - 5601:5601
+          - 9200:9200
+          - 5044:5044
+# Ensure Docker service is enabled if there is a reboot
+    - name: Enable service docker on boot
+      systemd:
+        name: docker
+        enabled: yes
+

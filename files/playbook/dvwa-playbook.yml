@@ -1,0 +1,41 @@
+#This playbook creates the web servers to be monitored by the ELK stack.
+# 1) Place this file in the /etc/ansible directory of the Ansible control node.
+# 2) Ensure the /etc/ansible/host file has the correct private IP addresses
+#      of the target machines defined in the [webservers] section.
+# 3) Ensure the /etc/ansible/ansible.cfg file has the "remote_user" and "log_path" defined
+# 4) Use the "ansible-playbook [playbook]" command to execute.
+# - Created by George Gamarra 
+---
+  - name: Create DVWA web servers
+    hosts: webservers
+    become: true
+    tasks:
+
+# Install Docker Engine to run containers
+    - name: Install docker.io
+      apt:
+        force_apt_get: yes
+        name: docker.io
+        state: present
+
+# Package used to install Python software
+    - name: Install python-pip
+      apt:
+        force_apt_get: yes
+        name: python-pip
+        state: present
+
+# Python client for Docker
+    - name: Install Docker module
+      pip:
+        name: docker
+        state: present
+
+# Install and start Docker Container for DVWA web server
+    - name: download and launch a docker web container
+      docker_container:
+        name: dvwa
+        image: cyberxsecurity/dvwa
+        state: started
+        published_ports: 80:80
+
