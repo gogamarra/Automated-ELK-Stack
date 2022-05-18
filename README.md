@@ -11,12 +11,12 @@ Skills and knowledge demonstrated:
 ![ Deployment Architecture](./images/network-diagram-elk.jpg)
 
 ### Playbooks, Configuration Files
-The Ansible files, known as **PLAYBOOKS**, contain YAML code and have beeen tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  The PLAYBOOKS can be used to recreate the entire deployment . Alternatively, select portions of a PLAYBOOK may be used to install only certain pieces of specific functions desired.  For example, install FILEBEAT, but not METRICBEAT.  (See comments within each config file for target directory placement.)
+The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the Ansible Docker provisioner container within the Jump-Box-Provisioner VM.  Use the PLAYBOOKS to recreate the entire deployment. Alternately, use select portions of a PLAYBOOK to install only certain functions desired.  For example, install FILEBEAT, but not METRICBEAT.  (See comments within each configuration file for target directory placement.)
 
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
 
-## Outline of Additional Infomration Presented:
+## Outline of Additional Information Presented:
 - Description of Topology
 - Access Policies
 - ELK Configuration
@@ -33,9 +33,9 @@ The main purpose of this network is to prepare a load balanced and monitored ins
 
 - **Load Balancers protect the availability of networked environments. On a normal basis, the load balancer can handle initial communication with incoming client requests thus releasing the application from these tasks and allowing the applications to respond quicker.  In an extreme security situation, load balancers can help to diminish the effects of DDoS (Distributed Denial Of Service) attacks by redirecting malicious traffic to alternative sources so as not to overwhelm and deny access to the main application servers.** 
 
-<ins>Jump Box</ins> advantages included efficiency and consistancy in a cloud environment
+<ins>Jump Box</ins> advantages included efficiency and consistency in a cloud environment
 
-- **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernal rather than graphical user interface or other administrative features.  The Jump box can be used to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case.**
+- **If more virtual machine resources are needed, the additional VM capacity can be rolled out as 'containers' which are optimized smaller instances of VMs focusing on the kernel rather than graphical user interface or other administrative features.  Use the Jump box to manage all additional containers.  The implementation method ensures that all containers are implemented with pre-defined images that are the same in every case.**
 
 <ins>ELK Stack</ins> integration allows defenders to monitor vulnerable web servers for changes in:
 - **The file system, which is captured in log files**
@@ -56,7 +56,7 @@ The main purpose of this network is to prepare a load balanced and monitored ins
 
 <ins>Firewall</ins> functionality is performed by and set within the Azure Network Security Group.
 
-<ins>DVWA web servers</ins> are NOT exposed directly to the public Internet, but are restricted to http requests only when received via the load balancer.  Internal hardening within DVWA servers is outside the scope of this excercise. 
+<ins>DVWA web servers</ins> are NOT exposed directly to the public Internet, but are restricted to http requests only when received via the load balancer.  Internal hardening within DVWA servers is outside the scope of this exercise. 
 
 <ins>Jump-Box-Provisioner</ins> is the only VM that can accept SSH connections from the Internet. Access to this VM is only allowed from the following IP addresses and restricted to specific SSH Port traffic:
 - **157.131.129.224, Port 22**: Referring to the Administrator's console connection via SSH.  
@@ -69,7 +69,7 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 
 <ins>Summary of Access Policies</ins>
 
-| VM Name              |     Administrative Accesss      |   Cloud Requests Allowed       |
+| VM Name              |     Administrative Access      |   Cloud Requests Allowed       |
 |----------------------|---------------------------------|--------------------------------|
 | Jump-Box-Provisioner | 157.131.129.224 (Port22 w/key)  |             No                 |
 | Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only) |
@@ -77,7 +77,7 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 ##
 ## ELK Configuration
 
-ANSIBLE provisioning sofware was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
+ANSIBLE provisioning software was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
 - **The Administrator can rerun the configuration more easily as needed than if we had to configure physical machines or fully deployed VM's.  Thus we can also more easily ensure multiple instances have the same configuration at setup.**
 
 The playbook implements the following tasks:
@@ -100,7 +100,7 @@ I have installed the following ELASTIC "Beats" lightweight shippers on the monit
 
 These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
-- **Mertricbeat collects metrics from the operating system and from services running on the servers** 
+- **Metricbeat collects performance data from the operating system and from services running on the servers** 
 ##
 ## SCREENSHOTS - Successful Build and Dashboard Working Confirmation
 The following screenshot displays the result of running `DOCKER-ANSIBLE` PLAYBOOKS after successfully configuring the ELK Stack server and installing the Beats data shippers to populate the DASHBOARDS.
