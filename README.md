@@ -26,7 +26,7 @@ Skills and knowledge demonstrated:
 - How to Use the Ansible Playbook Builds
  
 ## Deliverables and Network Diagram
-- ANSIBLE playbook files that generate and configure the highlighted orange areas in the following diagram.
+- ANSIBLE playbook and configuration files that generate an ELK stack at the highlighted orange areas in the following diagram.
 - The process can be repeated ad hoc or automatically by rerunning the playbooks
 
 ![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
