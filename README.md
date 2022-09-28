@@ -23,7 +23,7 @@ Skills and knowledge demonstrated:
 - ELK Configuration
   - Machines Being Monitored
   - Beats in Use
-- SCREENSHOTS - Success Build and Dashboard Confirmation
+- SCREENSHOTS - Successful Build and Dashboard Confirmation
 - How to Use the Ansible Playbook Builds
  
 ## Network Diagram
@@ -114,7 +114,7 @@ These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Metricbeat collects performance data from the operating system and from services running on the servers** 
 
-## SCREENSHOTS - Successful Build Confirmation and Working Dashboard
+## SCREENSHOTS - Successful Build and Dashboard Confirmation
 The following images display the actual results after running `DOCKER-ANSIBLE` PLAYBOOKS.  
 - The ELK stack server was deployed.
 - Beats data shippers were installed on the webservers.
