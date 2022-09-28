@@ -123,16 +123,16 @@ The following images display the actual results after running `DOCKER-ANSIBLE` P
 ### PLAYBOOK: Create/Configure/Start ELK Stack
 
 ![ELK-Playbook-Success](./images/install-elk.jpg)
-##
-- PLAYBOOK: Configure Web Servers with FILEBEAT
+
+### PLAYBOOK: Configure Web Servers with FILEBEAT
 
 ![Filebeat-Playbook-Success](./images/install-filebeat.jpg)
-##
-- PLAYBOOK:  Configure Web Servers with METRICBEAT
+
+### PLAYBOOK:  Configure Web Servers with METRICBEAT
 
 ![Metricbeat-Playbook-Success](./images/install-metricbeat.jpg)
-##
-- DASHBOARDS Working and Receiving Data
+
+### DASHBOARDS Working and Receiving Data
 
 ![filebeat System Overview](./images/dashboard-filebeat-system.jpg)
 ![Metricbeat System Overview](./images/dashboard-metricbeat-system.jpg)
