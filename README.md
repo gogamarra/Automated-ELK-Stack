@@ -1,5 +1,12 @@
 # Automated ELK Stack Deployment
-In this project, I implement an ELK stack to monitor a website residing on a virtual network previously created in a Microsoft Azure cloud environment. 
+
+##Introduction
+In this project, I create and deploy a live sercurity solution known as an ELK monitoring stack within a previously created virtual network.  This solution will allow an analyst to monitor all machines on the network.
+
+An ELK Stack allows an analyst to:
+- Collect logs from multiple machine sources to load and contain in a single database.
+- Execute complicated searches
+- Build graphs, charts and other visual tools from network data
 
 Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
