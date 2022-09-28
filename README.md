@@ -27,7 +27,6 @@ Skills and knowledge demonstrated:
  
 ## Deliverables
 
-##
 ### Network Diagram
 - The orange highlighted sections of the following diagram indicate where ANSIBLE playbook and configuration files will generate an ELK stack.
 
