@@ -15,7 +15,7 @@ Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software, YAML scripting language, and DOCKER container environments to create an ELK stack server.
 - Deploying ELASTIC lightweight shippers, known as "beats" on web servers to collect data and send to the ELK stack for search and analysis.
 
-## Outline of Deliverables
+## Outline of Deliverables Presented
 - Network Diagram
 - Playbook and Configuration Files
 - Description of Topology
@@ -26,20 +26,18 @@ Skills and knowledge demonstrated:
 - SCREENSHOTS - Success Build and Dashboard Confirmation
 - How to Use the Ansible Playbook Builds
  
-## Deliverables
-
-### Network Diagram
+## Network Diagram
 - The orange highlighted sections in the following diagram show where ANSIBLE playbook and configuration files will generate an ELK stack.
 
 ![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
-##
-### Playbooks, Configuration Files
+#
+## Playbooks, Configuration Files
 Ansible files, known as **PLAYBOOKS**, contain YAML code and have been tested and used to generate a live ELK deployment as shown in the network diagram.  The PLAYBOOKS are executed from the <ins>Ansible Docker</ins> provisioner container within the <ins>Jump-Box-Provisioner VM</ins>.  Use the PLAYBOOKS to recreate the entire deployment. Alternately, use select portions of a PLAYBOOK to install only certain functions desired.  For example, install the FILEBEAT data shipper, but not METRICBEAT.  (See comments within each configuration file for target directory placement.)  The delivered files are as follows:
 
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
-##
-### Description of the Topology
+#
+## Description of the Topology
 
 The main purpose of this network is to host a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
 
