@@ -29,8 +29,7 @@ Skills and knowledge demonstrated:
 
 ##
 ### Network Diagram
-- ANSIBLE playbook and configuration files that generate an ELK stack at the highlighted orange areas in the following diagram.
-- The process can be repeated ad hoc or automatically by rerunning the playbooks
+- The orange highlighted sections of the following diagram indicate where ANSIBLE playbook and configuration files will generate an ELK stack.
 
 ![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
 
@@ -40,7 +39,6 @@ The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been teste
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
 
-##
 ### Description of the Topology
 
 The main purpose of this network is to prepare a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
