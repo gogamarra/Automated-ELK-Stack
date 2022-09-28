@@ -1,6 +1,6 @@
 # Automated ELK Stack Deployment
 
-##Introduction
+## Introduction
 
 In this project, I create and deploy a live sercurity solution known as an ELK monitoring stack within a previously created virtual network.  This solution will allow an analyst to monitor all machines on the network.
 
