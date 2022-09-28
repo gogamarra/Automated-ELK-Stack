@@ -25,8 +25,9 @@ Skills and knowledge demonstrated:
 - SCREENSHOTS - Success Build and Dashboard Confirmation
 - How to Use the Ansible Playbook Builds
  
-## Deliverables
-- ANSIBLE files that generate and configure the highlighted orange areas in the following diagram.
+## Deliverables and Network Diagram
+- ANSIBLE playbook files that generate and configure the highlighted orange areas in the following diagram.
+- The process can be repeated ad hoc or automatically by rerunning the playbooks
 
 ![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
 
