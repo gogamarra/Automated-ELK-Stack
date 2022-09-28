@@ -1,5 +1,5 @@
 # Automated ELK Stack Deployment
-In this project, I implement an ELK stack to monitor a website in a Microsoft Azure cloud environment. 
+In this project, I implement an ELK stack to monitor a website residing on a virtual network previously created in a Microsoft Azure cloud environment. 
 
 Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
@@ -16,7 +16,7 @@ The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been teste
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
 
-## Outline of Additional Information Presented:
+## Outline of Information Presented:
 - Description of Topology
 - Access Policies
 - ELK Configuration
