@@ -15,8 +15,8 @@ Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
 - Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack.
 
-## Outline of Presentation
-- Deliverables and Network Diagram
+## Outline of Deliverables
+- Network Diagram
 - Description of Topology
 - Access Policies
 - ELK Configuration
@@ -25,7 +25,10 @@ Skills and knowledge demonstrated:
 - SCREENSHOTS - Success Build and Dashboard Confirmation
 - How to Use the Ansible Playbook Builds
  
-## Deliverables and Network Diagram
+## Deliverables
+
+##
+### Network Diagram
 - ANSIBLE playbook and configuration files that generate an ELK stack at the highlighted orange areas in the following diagram.
 - The process can be repeated ad hoc or automatically by rerunning the playbooks
 
