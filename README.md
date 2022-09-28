@@ -30,13 +30,13 @@ Skills and knowledge demonstrated:
 - The orange highlighted sections in the following diagram show where ANSIBLE playbook and configuration files will generate an ELK stack.
 
 ![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
-#
+
 ## Playbooks, Configuration Files
 Ansible files, known as **PLAYBOOKS**, contain YAML code and have been tested and used to generate a live ELK deployment as shown in the network diagram.  The PLAYBOOKS are executed from the <ins>Ansible Docker</ins> provisioner container within the <ins>Jump-Box-Provisioner VM</ins>.  Use the PLAYBOOKS to recreate the entire deployment. Alternately, use select portions of a PLAYBOOK to install only certain functions desired.  For example, install the FILEBEAT data shipper, but not METRICBEAT.  (See comments within each configuration file for target directory placement.)  The delivered files are as follows:
 
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
-#
+
 ## Description of the Topology
 
 The main purpose of this network is to host a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
@@ -63,8 +63,8 @@ The main purpose of this network is to host a load balanced and monitored instan
 | DVWA-VM1             | Webserver |      Yes      |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |
 | DVWA-VM2             | Webserver |      Yes      |  10.0.0.6  | 52.191.166.158 | Linux-Ubuntu 18.04 |
 | ELK-Stack            | ELKserver |      No       |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |
-##
-### Access Policies
+
+## Access Policies
 
 <ins>Firewall</ins> functionality is performed by and set within the Azure Network Security Group.
 
@@ -87,7 +87,7 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 | Jump-Box-Provisioner | 157.131.129.224 (Port22 w/key)  |             No                 |
 | Elk-Stack            | 10.0.0.4 (Jump-Box-Provisioner) | 107.3.134.166 (Port 5601 Only) |
 | DVWA1, DVWA2         | 10.0.0.4 (Jump-Box-Provisioner) | Load Balancer (Port 80 Only)   |
-##
+
 ## ELK Configuration
 
 ANSIBLE provisioning software was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
@@ -99,12 +99,12 @@ The ELK playbook implements the following tasks:
 - **Installs Pip**
 - **Pip Module Usage**
 - **Downloads and launches the ELK Container**
-##
+
 ### Machines Being Monitored
 The ELK Stack server is configured to monitor the following web servers:
 - **DVWA-VM1 (10.0.0.5)**
 - **DVWA-VM2 (10.0.0.6)**
-##
+
 ### BEATS in Use
 I have installed the following ELASTIC "Beats" lightweight shippers on the monitored machines to facilitate collection and transmission of data to the ELK Stack:
 - **Filebeat**
@@ -113,8 +113,8 @@ I have installed the following ELASTIC "Beats" lightweight shippers on the monit
 These Beats allow collecting the following information from the web servers.:
 - **Filebeat collects file system logs**
 - **Metricbeat collects performance data from the operating system and from services running on the servers** 
-##
-## SCREENSHOTS - Successful Build and Working Dashboard
+
+## SCREENSHOTS - Successful Build Confirmation and Working Dashboard
 The following images display the actual results after running `DOCKER-ANSIBLE` PLAYBOOKS.  
 - The ELK stack server was deployed.
 - Beats data shippers were installed on the webservers.
@@ -138,8 +138,8 @@ The following images display the actual results after running `DOCKER-ANSIBLE` P
 ![Metricbeat System Overview](./images/dashboard-metricbeat-system.jpg)
 ![Metricbeat Host Overview](./images/dashboard-metricbeat-host.jpg)
 ![Metricbeat Container Overview](./images/dashboard-metricbeat-containers.jpg)
-##
-### How to Use the Ansible Playbook Builds
+
+## How to Use the Ansible Playbook Builds
 In order to use the PLAYBOOKS, you will need to have Ansible already configured (e.g.Ansible Docker Container on the Jump Box). Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
