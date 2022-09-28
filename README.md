@@ -17,6 +17,7 @@ Skills and knowledge demonstrated:
 
 ## Outline of Deliverables
 - Network Diagram
+- Playbook and Configuration Files
 - Description of Topology
 - Access Policies
 - ELK Configuration
@@ -31,13 +32,13 @@ Skills and knowledge demonstrated:
 - The orange highlighted sections in the following diagram show where ANSIBLE playbook and configuration files will generate an ELK stack.
 
 ![ Deployment Architecture](./images/network-diagram-elkstack.jpg)
-
+##
 ### Playbooks, Configuration Files
 The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been tested and used to generate a live ELK deployment.  The PLAYBOOKS are executed from the <ins>Ansible Docker</ins> provisioner container within the <ins>Jump-Box-Provisioner VM</ins>.  Use the PLAYBOOKS to recreate the entire deployment. Alternately, use select portions of a PLAYBOOK to install only certain functions desired.  For example, install the FILEBEAT data shipper, but not METRICBEAT.  (See comments within each configuration file for target directory placement.)
 
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
-
+##
 ### Description of the Topology
 
 The main purpose of this network is to host a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
@@ -100,7 +101,6 @@ The ELK playbook implements the following tasks:
 - **Installs Pip**
 - **Pip Module Usage**
 - **Downloads and launches the ELK Container**
-
 ##
 ### Machines Being Monitored
 The ELK Stack server is configured to monitor the following web servers:
