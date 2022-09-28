@@ -40,7 +40,7 @@ The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been teste
 
 ### Description of the Topology
 
-The main purpose of this network is to prepare a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
+The main purpose of this network is to host a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
 
 <ins>Load balancing </ins>  ensures that the application will be **highly available**, in addition to **restricting traffic** to the network.
 
