@@ -119,8 +119,8 @@ The following images display the actual results after running `DOCKER-ANSIBLE` P
 - The ELK stack server was deployed.
 - Beats data shippers were installed on the webservers.
 - Dashboards can be generated from captured data activity.
-##
-- PLAYBOOK: Create/Configure/Start ELK Stack
+
+### PLAYBOOK: Create/Configure/Start ELK Stack
 
 ![ELK-Playbook-Success](./images/install-elk.jpg)
 ##
