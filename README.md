@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this project, I create and deploy a live sercurity solution known as an ELK monitoring stack within a previously created virtual network.  This solution will allow an analyst to monitor all machines on the network.
+In this project, I create and deploy a live security solution known as an ELK monitoring stack within a previously created virtual network.  This solution will allow an analyst to monitor all network traffic.
+
+ELK stands for ELASTICSEARCH (search and analytics engine), LOGSTASH (Server side log collection tool), KIBANA (Data visualization tool)
 
 An ELK Stack allows an analyst to:
 - Collect logs from multiple machine sources to load and contain in a single database.
@@ -13,6 +15,16 @@ Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
 - Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack.
 
+## Outline of Presentation
+- Deliverables and Network Diagram
+- Description of Topology
+- Access Policies
+- ELK Configuration
+  - Machines Being Monitored
+  - Beats in Use
+- SCREENSHOTS - Success Build and Dashboard Confirmation
+- How to Use the Ansible Playbook Builds
+ 
 ## Deliverables
 - ANSIBLE files that generate and configure the highlighted orange areas in the following diagram.
 
@@ -24,14 +36,6 @@ The Ansible files, known as **PLAYBOOKS**, contain YAML code and have been teste
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
 
-## Outline of Information Presented:
-- Description of Topology
-- Access Policies
-- ELK Configuration
-  - Machines Being Monitored
-  - Beats in Use
-- SCREENSHOTS - Success Build and Dashboard Confirmation
-- How to Use the Ansible Playbook Builds
 ##
 ### Description of the Topology
 
