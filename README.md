@@ -13,7 +13,7 @@ An ELK Stack allows an analyst to:
 
 Skills and knowledge demonstrated:
 - Using ANSIBLE provisioning software and DOCKER container environments to create an ELK stack server.
-- Deploying ELASTIC lightweight shippers on web servers to collect data and send to the ELK stack.
+- Deploying ELASTIC lightweight shippers, known as "beats" on web servers to collect data and send to the ELK stack.
 
 ## Outline of Deliverables
 - Network Diagram
