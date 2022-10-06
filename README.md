@@ -67,7 +67,7 @@ The main purpose of this network is to host a load balanced and monitored instan
 | DVWA-VM1             | Webserver |      Yes      |  10.0.0.5  | 52.191.166.158 | Linux-Ubuntu 18.04 |
 | DVWA-VM2             | Webserver |      Yes      |  10.0.0.6  | 52.191.166.158 | Linux-Ubuntu 18.04 |
 | ELK-Stack            | ELKserver |      No       |  10.0.0.7  | 52.183.78.79   | Linux-Ubuntu 18.04 |
-
+###
 ## Access Policies
 
 <ins>Firewall</ins> functionality is performed by and set within the Azure Network Security Group.
@@ -83,9 +83,6 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 - **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
 
 <ins>ELK Stack</ins> server can only accept external request for Kibana dashboard data through port 5601.
-
-
-
 
 <ins>Summary of Access Policies</ins>
 
