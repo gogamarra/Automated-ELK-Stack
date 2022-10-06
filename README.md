@@ -5,12 +5,13 @@
 OBJECTIVE: Create and deploy a live security solution known as an ELK monitoring stack using LINUX virtual machines/provisioner/containers to monitor an MS AZURE virtual network hosting web application servers.  This solution allows an analyst to monitor all network traffic and redeploy as needed.
 
 ELK stands for ELASTICSEARCH (search and analytics engine), LOGSTASH (Server side log collection tool), KIBANA (Data visualization tool)
+
 An ELK Stack allows an analyst to:
 - Collect logs from multiple machine sources to load and contain in a single database.
 - Execute complicated searches
 - Build graphs, charts and other visual tools from network data
 
-Skills and knowledge demonstrated:
+Skills and Knowledge Demonstrated:
 - Using ANSIBLE provisioning software, YAML scripting language, and DOCKER container environments to create an ELK stack server.
 - Deploying ELASTIC lightweight shippers, known as "beats" on web servers to collect data and send to the ELK stack for search and analysis.
 
