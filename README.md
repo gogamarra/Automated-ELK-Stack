@@ -41,7 +41,6 @@ Ansible files, known as **PLAYBOOKS**, contain YAML code and have been tested an
 - ![ANSIBLE Playbook Files](./files/playbook)
 - ![Configuration Files](./files/playbook)
 
-
 ## Description of the Topology
 
 The main purpose of this network is to host a load balanced and monitored instance of DVWA (D*mn Vulnerable Web Application)
@@ -57,6 +56,8 @@ The main purpose of this network is to host a load balanced and monitored instan
 <ins>ELK Stack</ins> integration allows defenders to monitor vulnerable web servers for changes in:
 - **The file system, which is captured in log files**
 - **Machine metrics, such as VM usage, in particular CPU usage and uptime**
+
+
 
 <ins>Summary of Virtual Machines</ins>
 
