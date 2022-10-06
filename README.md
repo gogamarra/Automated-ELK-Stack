@@ -4,7 +4,7 @@
 
 <ins>OBJECTIVE</ins>: Create and deploy a live security solution known as an ELK monitoring stack using LINUX virtual machines/provisioner/containers to monitor an MS AZURE virtual network hosting web application servers.  This solution allows an analyst to monitor all network traffic and redeploy as needed.
 
-<ins>Skills and Knowledge Demonstrated</ins>:
+<ins>Skills and Knowledge Demonstrated</ins>: 
 - Using ANSIBLE provisioning software, YAML scripting language, and DOCKER container environments to create an ELK stack server.
 - Deploying ELASTIC lightweight shippers, known as "beats" on web servers to collect data and send to the ELK stack for search and analysis.
 
