@@ -57,8 +57,6 @@ The main purpose of this network is to host a load balanced and monitored instan
 - **The file system, which is captured in log files**
 - **Machine metrics, such as VM usage, in particular CPU usage and uptime**
 
-
-
 <ins>Summary of Virtual Machines</ins>
 
 (The public IP addresses will vary by deployment effort.)
@@ -85,6 +83,9 @@ Machines within the network can only be accessed and configured by **Jump-Box-Pr
 - **Jump-Box-Provisioner** Private IP Address is 10.0.0.4
 
 <ins>ELK Stack</ins> server can only accept external request for Kibana dashboard data through port 5601.
+
+
+
 
 <ins>Summary of Access Policies</ins>
 
