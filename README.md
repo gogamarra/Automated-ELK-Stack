@@ -11,6 +11,7 @@
 - Creating dashboards to monitor security related events.
 
 <ins>What is an ELK Stack?</ins>:
+
 ELK stands for ELASTICSEARCH (search and analytics engine), LOGSTASH (Server side log collection tool), KIBANA (Data visualization tool)
 
 An ELK Stack allows an analyst to:
