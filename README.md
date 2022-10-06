@@ -2,10 +2,9 @@
 
 ## Introduction
 
-In this project, I create and deploy a live security solution known as an ELK monitoring stack within a previously created virtual network.  This solution allows an analyst to monitor all network traffic.
+OBJECTIVE: Create and deploy a live security solution known as an ELK monitoring stack using LINUX virtual machines/provisioner/containers to monitor an MS AZURE virtual network hosting web application servers.  This solution allows an analyst to monitor all network traffic and redeploy as needed.
 
 ELK stands for ELASTICSEARCH (search and analytics engine), LOGSTASH (Server side log collection tool), KIBANA (Data visualization tool)
-
 An ELK Stack allows an analyst to:
 - Collect logs from multiple machine sources to load and contain in a single database.
 - Execute complicated searches
